@@ -20,6 +20,6 @@ This is a problem which needs a different function 'createCustomId'. We have a t
 
 Now my function 'createCustomId' will have one parameter 'customId'. First I will fetch the loggedIn agentId so that I can map it to the agent id he has worked with. Let's call him 'currentAgent'.
 
-'currentAgent' will enter 'agentWorkedWithName' and 'customId'. We will save this data in a new table 'CustomAgentTable'. But how can we map that agent with the customId. The answer is to use the 'getShiftsByFacility' function to get the shift of that agent during that time and match it with name and Id. Now we will match this agent shift with the shift we have to get agent Id and mapped it to customId that was created by current user.
+'currentAgent' will enter 'customId'. We will save this data in a new table 'CustomAgentTable'. But how can we map that agent with the customId. The answer is to use the 'getShiftsByFacility' function to get the shift of that agent during that time and match it with name and Id. Now we will match this agent shift with the shift we have to get agent Id and mapped it to customId that was created by current user.
 
 This way this function can map the customId with the appropriate agents and save it in database.
